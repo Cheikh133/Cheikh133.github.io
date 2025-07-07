@@ -38,7 +38,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
        
-       <span class="sitename">Cheikh LO</span>
+        <span class="sitename">Cheikh LO</span>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -360,31 +360,28 @@
   <script src="assets/js/main.js"></script>
 
 <script>
-  let currentSection = '';
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('#navmenu a');
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          currentSection = '#' + entry.target.id;
-        }
-      });
-    },
-    { threshold: 0.5 } 
-  );
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute('id');
+      }
+    });
 
-  document.querySelectorAll('section[id]').forEach((section) => {
-    observer.observe(section);
-  });
-
-  document.querySelectorAll('.language-switcher a').forEach(link => {
-    link.addEventListener('click', function(event) {
-      event.preventDefault();
-      const newUrl = this.getAttribute('href') + currentSection;
-      window.location.href = newUrl;
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
     });
   });
 </script>
+
 
 
 <footer class="text-center py-4 small text-muted">
