@@ -1024,17 +1024,6 @@ section, .section {
 }
 
 
-.sitename {
-  font-size: 26px; 
-  font-weight: 700;
-}
-
-
-@media (max-width: 767px) {
-  .sitename {
-    font-size: 22px; 
-  }
-}
 
 .tech-badges {
   display: flex;
@@ -1504,3 +1493,23 @@ section,
     padding-bottom: 8px;
   }
 }
+
+.sitename {
+  all: unset;
+  font-family: var(--nav-font);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--contrast-color); /* Texte blanc sur fond bleu */
+  background-color: #0a192f;
+  padding: 4px 10px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+  .sitename {
+    font-size: 14px;
+  }
+}
+
