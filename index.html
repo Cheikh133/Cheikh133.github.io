@@ -352,28 +352,41 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 <script>
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('#navmenu a');
+  let currentSection = '';
 
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      if (pageYOffset >= sectionTop - sectionHeight / 3) {
-        current = section.getAttribute('id');
-      }
-    });
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          currentSection = '#' + entry.target.id;
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
 
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === '#' + current) {
-        link.classList.add('active');
+  document.querySelectorAll('section[id]').forEach((section) => {
+    observer.observe(section);
+  });
+
+  document.querySelectorAll('.language-switcher a').forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      // Cas spécial : détecter si on est tout en bas (mobile ou non)
+      const isAtBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 2);
+      let sectionToUse = currentSection;
+
+      if (isAtBottom) {
+        const lastSection = document.querySelector('section[id]:last-of-type');
+        sectionToUse = '#' + lastSection.id;
       }
+
+      const newUrl = this.getAttribute('href') + sectionToUse;
+      window.location.href = newUrl;
     });
   });
 </script>
-
 <footer class="text-center py-4 small text-muted">
   © 2025 Cheikh LO.
 </footer>
