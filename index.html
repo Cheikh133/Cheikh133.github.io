@@ -362,7 +362,7 @@
         }
       });
     },
-    { threshold: 0.5 }
+    { threshold: 0.5 } 
   );
 
   document.querySelectorAll('section[id]').forEach((section) => {
@@ -372,21 +372,12 @@
   document.querySelectorAll('.language-switcher a').forEach(link => {
     link.addEventListener('click', function(event) {
       event.preventDefault();
-
-      // Cas spécial : détecter si on est tout en bas (mobile ou non)
-      const isAtBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 2);
-      let sectionToUse = currentSection;
-
-      if (isAtBottom) {
-        const lastSection = document.querySelector('section[id]:last-of-type');
-        sectionToUse = '#' + lastSection.id;
-      }
-
-      const newUrl = this.getAttribute('href') + sectionToUse;
+      const newUrl = this.getAttribute('href') + currentSection;
       window.location.href = newUrl;
     });
   });
 </script>
+
 <footer class="text-center py-4 small text-muted">
   © 2025 Cheikh LO.
 </footer>
