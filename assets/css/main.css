@@ -1521,6 +1521,22 @@ section,
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .about .row.gy-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about .about-me {
+    text-align: center;
+  }
+
+  .profile-links {
+    justify-content: center;
+  }
+}
+
 
 
 
