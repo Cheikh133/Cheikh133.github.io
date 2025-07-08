@@ -1521,25 +1521,7 @@ section,
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .about .row.gy-4 {
-    flex-direction: column;
-  }
 
-  .about .col-md-5, 
-  .about .col-md-7 {
-    width: 100%;
-    max-width: 600px;
-  }
-
-  .about .about-me {
-    text-align: center;
-  }
-
-  .profile-links {
-    justify-content: center;
-  }
-}
 
 
 
