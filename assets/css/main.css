@@ -686,9 +686,9 @@ section, .section {
   width: 64px;
   height: 3px;
   background: var(--accent-color);
-  left: 0;
+  left: 50%;
   bottom: 0;
-  margin: auto;
+  transform: translateX(-50%);
 }
 
 .about .about-me p {
@@ -1524,6 +1524,26 @@ section,
 
 
 
+.about .row.gy-4 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .col-md-5, 
+.about .col-md-7 {
+  flex: 1 1 300px; /* largeur minimale 300px, ils prennent l'espace sinon */
+  max-width: 600px; /* limite la largeur excessive */
+}
+
+.about .about-me {
+  text-align: center;
+}
+
+.profile-links {
+  justify-content: center;
+}
 
 
 
