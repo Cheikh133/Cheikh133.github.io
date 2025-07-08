@@ -1548,7 +1548,23 @@ section,
 
 
 
+.about img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 400px; /* Limite la hauteur, évite l’effet « trop grand » */
+  object-fit: contain;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
+/* Ajustement spécial pour les écrans larges (ordinateur) */
+@media (min-width: 992px) {
+  .about img {
+    max-width: 300px;
+    height: auto;
+  }
+}
 
 
 
