@@ -1514,6 +1514,8 @@ section,
 }
 
 
+
+/*******************************/
 @media (min-width: 992px) {
   .about .row.gy-4 {
     display: flex;
@@ -1522,7 +1524,7 @@ section,
 }
 
 
-
+/*******************************/
 
 .about .row.gy-4 {
   display: flex;
