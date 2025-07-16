@@ -1582,3 +1582,39 @@ section,
 .project-card .project-description {
   text-align: justify !important;
 }
+
+
+/* Conteneur pour le bouton + tooltip */
+.live-demo-btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Le “tooltip” via pseudo-élément */
+.live-demo-btn::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;                /* juste sous le bouton */
+  left: 50%;
+  transform: translateX(-50%) translateY(8px) scale(0.8);
+  transform-origin: top center;
+  background-color: #f8f9fa;
+  color: #212529;
+  padding: 6px 10px;
+  font-size: 13px;
+  border-left: 4px solid #0d6efd;
+  border-radius: 4px;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 1000;
+}
+
+/* Affichage au survol */
+.live-demo-btn:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(8px) scale(1);
+}
