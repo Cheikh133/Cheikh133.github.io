@@ -94,7 +94,7 @@
     Je suis Data Scientist et Ingénieur Statisticien, avec de solides bases en statistiques, probabilités, optimisation et économétrie.
   </p>
   <p>
-Je conçois des solutions de machine learning pour la modélisation prédictive — notamment pour l’évaluation du risque de chômage de longue durée, l’analyse du churn, le traitement du langage naturel (NLP) et l’analyse de données à grande dimension. Je réalise également des enquêtes et des analyses statistiques pour des applications variées, et j’ai mené des projets intégrant le déploiement de modèles (MLOps) et des solutions cloud avec AWS.  </p>
+Je conçois des solutions de machine learning pour la modélisation prédictive — notamment pour l’évaluation du risque de chômage de longue durée, l’analyse du churn, le traitement du langage naturel (NLP), l’analyse de données à grande dimension, et la maintenance prédictive (RUL). Je réalise également des enquêtes et des analyses statistiques pour des applications variées, et j’ai mené des projets intégrant le déploiement de modèles (MLOps) et des solutions cloud avec AWS.  </p>
 
 
   
@@ -145,46 +145,169 @@ Je conçois des solutions de machine learning pour la modélisation prédictive 
 
     <div class="row gy-4">
 
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="project-card">
-          <h3>Happiness Scores – Modèles Linéaires Mixtes</h3>
-          <p>Application de modèles linéaires mixtes sur les données du World Happiness Report (2015–2023).</p>
-          <div class="project-links">
-            <a href="https://github.com/Cheikh133/happiness-linear-mixed-models" target="_blank" class="btn">GitHub Repo</a>
-            <a href="https://cheikh133.github.io/happiness-linear-mixed-models/" target="_blank" class="btn">Voir l’analyse</a>
-          </div>
-        </div>
-      </div>
+	<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+	  <div class="project-card">
+		<h3>Scores de Bonheur – Modèles Linéaires Mixtes</h3>
+		<p class="project-description">
+		  Analyse des données du World Happiness Report (2015–2023) utilisant des modèles linéaires mixtes pour estimer les effets fixes (PIB, espérance de vie, etc.) et les effets aléatoires (intercept et tendances par pays).
+		</p>
+		<div class="project-links">
+		  <a
+			href="https://github.com/Cheikh133/happiness-linear-mixed-models"
+			target="_blank"
+			class="btn btn-outline-primary"
+		  >
+			<i class="bi bi-github"></i> Dépôt GitHub
+		  </a>
+		  <a
+			href="https://cheikh133.github.io/happiness-linear-mixed-models/"
+			target="_blank"
+			class="btn btn-primary"
+		  >
+			<i class="bi bi-bar-chart-line"></i> Voir l'analyse
+		  </a>
+		</div>
+		<div class="mt-3 small text-muted">
+		  Outils : R, lme4, lmerTest, ggplot2, tidyverse, Quarto, GitHub Pages
+		</div>
+	  </div>
+	</div>
 
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="project-card">
-          <h3>API de Détection d’Objets avec YOLOv5</h3>
-          <p>API REST pour la détection d’objets, développée avec FastAPI, YOLOv5, Docker et tests automatisés.</p>
-          <div class="project-links">
-            <a href="https://github.com/Cheikh133/fastapi-yolo-object-detector" target="_blank" class="btn">GitHub Repo</a>
-          </div>
-        </div>
-      </div>
+	<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+	  <div class="project-card">
+		<h3>API de Détection d’Objets YOLOv5</h3>
+		<p class="project-description">
+		    API REST développée avec FastAPI et YOLOv5 pour la détection d’objets sur images, conteneurisée avec Docker, tests automatisés et interface Swagger.
+		</p>
+		<div class="project-links">
+		  <a
+			href="https://github.com/Cheikh133/fastapi-yolo-object-detector"
+			target="_blank"
+			class="btn btn-outline-primary"
+		  >
+			<i class="bi bi-github"></i> Dépôt GitHub
+		  </a>
+		  <a
+			href="https://hub.docker.com/r/cheikh331/fastapi-yolo"
+			target="_blank"
+			class="btn btn-outline-secondary"
+		  >
+			<i class="bi bi-box-seam"></i> Docker Hub
+		  </a>
+		</div>
+		<div class="mt-3 small text-muted">
+		  Outils : Python, FastAPI, YOLOv5, Docker, Pytest, Uvicorn
+		</div>
+	  </div>
+	</div>
+	  
+	  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+  <div class="project-card">
+    <h3>Prédiction de la Durée de Vie Restante</h3>
+    <p class="project-description">
+      Solution de maintenance prédictive de bout en bout pour turbofan : ingestion et prétraitement des données NASA CMAPSS FD001, ingénierie de caractéristiques temporelles, entraînement d’un modèle LightGBM pour la prédiction de la Durée de Vie Restante (RUL), et dashboard interactif pour le suivi & diagnostics (distribution d’erreurs, jauge de cycle de vie, explicabilité SHAP) via Streamlit.
+    </p>
+    <div class="project-links">
+      <!-- Lien vers le dépôt GitHub -->
+      <a
+        href="https://github.com/Cheikh133/predictive-maintenance-RUL"
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="bi bi-github"></i> Dépôt GitHub
+      </a>
+      <!-- Lien vers la démo Streamlit en direct -->
+      <a
+        href="https://predictive-maintenance-rul-wth7dklhnwcvyzgzoyp2ry.streamlit.app/"
+        target="_blank"
+        class="btn btn-primary"
+      >
+        <i class="bi bi-play-circle"></i> Démo en direct
+      </a>
+    </div>
+    <div class="mt-3 small text-muted">
+      Outils : Python, Pandas, scikit‑learn, LightGBM, Optuna, SHAP,  
+      Streamlit, Altair
+    </div>
+  </div>
+</div>
+	  
+	  
 
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="project-card">
-          <h3>Tableau de Bord World Happiness</h3>
-          <p>Tableau de bord interactif sous Shiny pour la modélisation et la visualisation des scores de bonheur (2015–2023).</p>
-          <div class="project-links">
-            <a href="https://github.com/Cheikh133/world_hapiness_app" target="_blank" class="btn">GitHub Repo</a>
-          </div>
-        </div>
-      </div>
+	<div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+	  <div class="project-card">
+		<h3>Tableau de Bord World Happiness</h3>
+		<p class="project-description">
+		  Tableau de bord Shiny interactif utilisant les données du World Happiness Report (2015–2023), avec analyses des tendances mondiales, profils par pays et modélisation prédictive.
+		</p>
 
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-        <div class="project-card">
-          <h3>Machine Learning sur AWS – Exercices</h3>
-          <p>Projets pratiques AWS : vision par ordinateur, NLP et développement de chatbot.</p>
-          <div class="project-links">
-            <a href="https://github.com/Cheikh133/machine-learning-on-aws-course" target="_blank" class="btn">GitHub Repo</a>
-          </div>
-        </div>
-      </div>
+		<div class="project-links">
+		  <a
+			href="https://github.com/Cheikh133/world_hapiness_app"
+			target="_blank"
+			class="btn btn-outline-primary"
+		  >
+			<i class="bi bi-github"></i> Dépôt GitHub
+		  </a>
+		  <a
+			href="https://youtu.be/1DTRjHESWTc?si=twXWFf3CMHgXKBw-"
+			target="_blank"
+			class="btn btn-primary"
+		  >
+			<i class="bi bi-play-circle"></i> Démo en direct
+		  </a>
+		</div>
+		<div class="mt-3 small text-muted">
+		  Outils : R, Shiny, ggplot2, leaflet, plotly, FactoMineR
+		</div>
+	  </div>
+	</div>
+
+
+ <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+  <div class="project-card">
+    <h3>Exercices de Machine Learning sur AWS</h3>
+    <p class="project-description">
+      Implémentations pratiques des services IA d’AWS : Rekognition pour l’étiquetage d’images, Textract pour l’extraction de textes, Comprehend pour l’analyse de sentiments, Transcribe & Translate pour l’audio, et Lex pour les chatbots conversationnels.
+    </p>
+    <div class="project-links">
+      <a
+        href="https://github.com/Cheikh133/machine-learning-on-aws-course"
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="bi bi-github"></i> Dépôt GitHub
+      </a>
+    </div>
+    <div class="mt-3 small text-muted">
+      Outils : Python, AWS CLI, Boto3, Rekognition, Textract, Comprehend, Transcribe, Translate, Lex
+    </div>
+  </div>
+</div>
+
+
+<div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+  <div class="project-card">
+    <h3>Filmalyze</h3>
+    <p class="project-description">
+      Tableau de bord Streamlit pour la découverte de films : traitement d’un dataset Kaggle de 10 000 films pour explorer par genre, année, note et recettes, générer des recommandations personnalisées et visualiser les tendances de notes et de box‑office.
+    </p>
+    <div class="project-links">
+      <a
+        href="https://gitlab-mi.univ-reims.fr/thai0004/mpd_m1_sep_team3"
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="bi bi-github"></i> Dépôt GitHub
+      </a>
+    </div>
+    <div class="mt-3 small text-muted">
+      Outils : matplotlib, seaborn, pandas, numpy, plotly, streamlit
+    </div>
+  </div>
+</div>
+
+
 
     </div>
 

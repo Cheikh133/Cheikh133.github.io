@@ -93,7 +93,7 @@
     I am a Data Scientist and Statistical Engineer with a strong background in statistics, probability, optimization, and econometrics.
   </p>
   <p>
-I develop machine learning solutions for predictive modeling—including job seeker risk assessment, churn analysis, NLP, and high-dimensional data analysis. I also conduct surveys and statistical analyses for diverse applications, and I have completed projects involving model deployment (MLOps) and cloud-based integrations with AWS.  </p>
+I develop machine learning solutions for predictive modeling—including job seeker risk assessment, churn analysis, NLP, high-dimensional data analysis, and predictive maintenance (RUL). I also conduct surveys and statistical analyses for diverse applications, and I have completed projects involving model deployment (MLOps) and cloud-based integrations with AWS.  </p>
 
 
   
@@ -143,46 +143,169 @@ I develop machine learning solutions for predictive modeling—including job see
 
     <div class="row gy-4">
 
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+  <div class="project-card">
+    <h3>Happiness Scores – Linear Mixed Models</h3>
+	
+    <p class="project-description">
+       Analysis of World Happiness Report data (2015–2023) using linear mixed models to estimate fixed effects (GDP, life expectancy, etc.) and random effects (country‑specific intercepts and trends).
+    </p>
+    <div class="project-links">
+      <a
+        href="https://github.com/Cheikh133/happiness-linear-mixed-models"
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="bi bi-github"></i> GitHub Repo
+      </a>
+      <a
+        href="https://cheikh133.github.io/happiness-linear-mixed-models/"
+        target="_blank"
+        class="btn btn-primary"
+      >
+        <i class="bi bi-bar-chart-line"></i> View Analysis
+      </a>
+    </div>
+    <div class="mt-3 small text-muted">
+      Tools: R, lme4, lmerTest, ggplot2, tidyverse, Quarto, GitHub Pages
+    </div>
+  </div>
+</div>
+
+	<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+	  <div class="project-card">
+		<h3>YOLOv5 Object Detection API</h3>
+		<p class="project-description">
+		 REST API built with FastAPI and YOLOv5 for image object detection, packaged in Docker with automated testing and Swagger UI.
+		</p>
+		<div class="project-links">
+		  <a
+			href="https://github.com/Cheikh133/fastapi-yolo-object-detector"
+			target="_blank"
+			class="btn btn-outline-primary"
+		  >
+			<i class="bi bi-github"></i> GitHub Repo
+		  </a>
+		  <a
+			href="https://hub.docker.com/r/cheikh331/fastapi-yolo"
+			target="_blank"
+			class="btn btn-outline-secondary"
+		  >
+			<i class="bi bi-box-seam"></i> Docker Hub
+		  </a>
+		</div>
+		<div class="mt-3 small text-muted">
+		  Tools: Python, FastAPI, YOLOv5, Docker, Pytest, Uvicorn
+		</div>
+	  </div>
+	</div>
+	        <!-- Turbofan RUL Prediction Project -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
         <div class="project-card">
-          <h3>Happiness Scores – Linear Mixed Models</h3>
-          <p>Applied linear mixed models to World Happiness Report data (2015–2023).</p>
+          <h3>Remaining Useful Life Prediction</h3>
+		<p class="project-description">
+		  End‑to‑end predictive‑maintenance solution for turbofan engines: ingest and preprocess NASA CMAPSS FD001 data, engineer time‑series features, train a LightGBM model for Remaining Useful Life (RUL) prediction, and deliver interactive monitoring & diagnostics (error distribution, life‑stage gauge, SHAP explainability) via Streamlit.
+		</p>
+
           <div class="project-links">
-            <a href="https://github.com/Cheikh133/happiness-linear-mixed-models" target="_blank" class="btn">GitHub Repo</a>
-            <a href="https://cheikh133.github.io/happiness-linear-mixed-models/" target="_blank" class="btn">View Analysis</a>
+            <!-- Link to GitHub repository -->
+            <a
+              href="https://github.com/Cheikh133/predictive-maintenance-RUL"
+              target="_blank"
+              class="btn btn-outline-primary"
+            >
+              <i class="bi bi-github"></i> GitHub Repo
+            </a>
+            <!-- Link to live Streamlit demo -->
+            <a
+              href="https://predictive-maintenance-rul-wth7dklhnwcvyzgzoyp2ry.streamlit.app/"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              <i class="bi bi-play-circle"></i> Live Demo
+            </a>
+          </div>
+          <div class="mt-3 small text-muted">
+            Tools: Python, Pandas, scikit‑learn, LightGBM, Optuna, SHAP,
+            Streamlit, Altair
           </div>
         </div>
       </div>
 
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="project-card">
-          <h3>YOLOv5 Object Detection API</h3>
-          <p>REST API for object detection using FastAPI, YOLOv5, Docker, and automated testing.</p>
-          <div class="project-links">
-            <a href="https://github.com/Cheikh133/fastapi-yolo-object-detector" target="_blank" class="btn">GitHub Repo</a>
-          </div>
-        </div>
-      </div>
+	  
+	  
 
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="project-card">
-          <h3>World Happiness Dashboard</h3>
-          <p>Built an interactive Shiny dashboard for happiness score modeling and visualization (2015–2023).</p>
-          <div class="project-links">
-            <a href="https://github.com/Cheikh133/world_hapiness_app" target="_blank" class="btn">GitHub Repo</a>
-          </div>
-        </div>
-      </div>
+	<div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+	  <div class="project-card">
+		<h3>World Happiness Dashboard</h3>
+		<p class="project-description">
+		  Interactive Shiny dashboard using World Happiness Report data (2015–2023), with global trend analysis, country profiles, and predictive modeling.
+		</p>
 
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-        <div class="project-card">
-          <h3>Machine Learning on AWS – Exercises</h3>
-          <p>Practical AWS projects: computer vision, NLP, and chatbot development.</p>
-          <div class="project-links">
-            <a href="https://github.com/Cheikh133/machine-learning-on-aws-course" target="_blank" class="btn">GitHub Repo</a>
-          </div>
-        </div>
-      </div>
+		<div class="project-links">
+		  <a
+			href="https://github.com/Cheikh133/world_hapiness_app"
+			target="_blank"
+			class="btn btn-outline-primary"
+		  >
+			<i class="bi bi-github"></i> GitHub Repo
+		  </a>
+		  <a
+			href="https://youtu.be/1DTRjHESWTc?si=twXWFf3CMHgXKBw-"
+			target="_blank"
+			class="btn btn-primary"
+		  >
+			<i class="bi bi-play-circle"></i> Live Demo
+		  </a>
+		</div>
+		<div class="mt-3 small text-muted">
+		  Tools: R, Shiny, ggplot2, leaflet, plotly, FactoMineR
+		</div>
+	  </div>
+	</div>
+
+<div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+  <div class="project-card">
+    <h3>Machine Learning Exercises on AWS</h3>
+    <p class="project-description">
+      Hands‑on implementations of AWS AI services : Rekognition for image labeling, Textract for document parsing, Comprehend for sentiment analysis, Transcribe & Translate for audio, and Lex for conversational bots.
+    </p>
+    <div class="project-links">
+      <a
+        href="https://github.com/Cheikh133/machine-learning-on-aws-course"
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="bi bi-github"></i> GitHub Repo
+      </a>
+    </div>
+    <div class="mt-3 small text-muted">
+      Tools: Python, AWS CLI, Boto3, Rekognition, Textract, Comprehend, Transcribe, Translate, Lex
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+  <div class="project-card">
+    <h3>Filmalyze</h3>
+    <p class="project-description">
+      Streamlit dashboard for movie discovery, processing a 10 000‑film Kaggle dataset to explore by genre, year, rating and revenue, generate personalized recommendations, and visualize rating & box‑office trends.
+    </p>
+    <div class="project-links">
+      <a
+        href="https://gitlab-mi.univ-reims.fr/thai0004/mpd_m1_sep_team3"
+        target="_blank"
+        class="btn btn-outline-primary"
+      >
+        <i class="bi bi-github"></i> GitHub Repo
+      </a>
+    </div>
+    <div class="mt-3 small text-muted">
+      Tools: matplotlib, seaborn, pandas, numpy, plotly, streamlit
+    </div>
+  </div>
+</div>
+
 
     </div>
 

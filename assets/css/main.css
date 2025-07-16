@@ -1577,3 +1577,8 @@ section,
 .more-projects a:hover {
   color: #0d6efd; 
 
+}
+
+.project-card .project-description {
+  text-align: justify !important;
+}
